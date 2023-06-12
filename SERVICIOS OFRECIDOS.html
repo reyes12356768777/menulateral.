@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu lateral dinamico</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="container">
+        <div class="sidebar">
+            <div class="side-hide">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+
+
+            <img src="LOGO.png" width="60" alt="LOGO">
+            <ul>
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="CATEGORIAS.html">CATEGORIAS</a></li>
+          <li><a href="SEMINUEVOS.html">SEMINUEVOS</a></li>
+          <li><a href="OFERTAS.html">OFERTAS</a></li>
+          <li><a href="SERVICIOS OFRECIDOS.html">SERVICIOS OFRECIDOS</a></li>
+          <li><a href="CONTACTO.html">CONTACTO</a></li>
+            </ul>
+        </div>
+        
+        <div class="content">
+            <h2>SERVICIOS OFRECIDOS</h2>
+                
+            </h2>
+        <br>
+        <br>
+        <p>Venta de instrumentos: En nuestra tienda encontraras una amplia variedad de instrumentos musicales de alta calidad, desde guitarras y bajos hasta pianos y baterias. Ofrecemos productos de las mejores marcas del mercado. </p>
+        <br>
+        <P>Reparacion y mantenimiento: Contamos con un equipo técnico altamente capacitado para reparar y mantener tus instrumentos en optimas condiciones. Ofrecemos servicios como ajustes, afinaciones, limpieza y cambios de cuerdas, entre otros</P>
+        <br>
+        <p>Customización: si buscas personalizar tu instrumento para darle un toque único y especial, ofrecemos servicios de customización como pintura, gabado láser o cambio de piezas.</p>
+        <br>
+        <p>Evaluación y compra: Si tienes un instrumento que ya no utilizas o que deseas vender, ofrecemos servicios de evaluación y compra. Nuestros expertos te brindarán una valoración justa del producto y te ofrecerán opciones para su venta.</p>
+            <center><button>Mostrar Menu</button></center>
+        </div>
+        
+
+    </section>
+
+    <!-- JS jQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+
+        // Mostrar Sidebar
+        $("button").on('click', function() {
+            $(".container").toggleClass("show");
+        });
+
+        $(".side-hide").on('click', function() {
+            $(".container").toggleClass("show");
+        })
+
+    </script>
+
+</body>
+
+</html>
